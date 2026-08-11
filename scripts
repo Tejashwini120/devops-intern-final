@@ -3,4 +3,4 @@ whoami
 date
 df -h
 
-chmod --x
+chmod +x scripts/.
