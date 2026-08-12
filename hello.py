@@ -1,1 +1,1 @@
-peint{ "Hello Devops!" )
+print{ "Hello Devops!" }
