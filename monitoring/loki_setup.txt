@@ -1,0 +1,15 @@
+Grafana Loki Setup
+
+Loki was started locally using Docker
+
+Command used:
+sudo docker run -d --name loki -p 3100:3100
+grafana/loki:latest
+
+Loki was verified using
+curl http://localhost:3100/ready
+
+The response was:
+ready
+
+Loki running on port 3100
