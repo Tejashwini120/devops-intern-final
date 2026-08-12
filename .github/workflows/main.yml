@@ -1,0 +1,21 @@
+name: DevOps Project Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Python
+        run: python3 hello.py
+
+      - name: Run Shell Script
+        run: bash scripts/sysinfo.sh
